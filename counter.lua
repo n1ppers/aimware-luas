@@ -40,7 +40,7 @@ function Events( Event, Entity )
 		shots = 0;
 		hits = 0;
 		missed = 0;
-    end
+	end
 end
 
 function DrawMissedShots()

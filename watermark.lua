@@ -4,8 +4,8 @@ local frame_rate = 0.0;
 local ping = 0.0;
 
 local function get_abs_fps()
-    frame_rate = 0.9 * frame_rate + (1.0 - 0.9) * abs_frame_time();
-    return math.floor((1.0 / frame_rate) + 0.5);
+	frame_rate = 0.9 * frame_rate + (1.0 - 0.9) * abs_frame_time();
+	return math.floor((1.0 / frame_rate) + 0.5);
 end
 
 function Watermark()
