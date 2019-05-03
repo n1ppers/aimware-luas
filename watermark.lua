@@ -20,11 +20,13 @@ function Watermark()
 		end
 		
 		draw.Color(180, 45, 170, 255);
-		draw.RoundedRectFill(w - 9, 28, 1603, 14);
+		draw.RoundedRectFill(w - 9, 28, 1583, 14);
 		
 		draw.SetFont(font);
 		draw.Color(225, 225, 225, 255);
-		draw.Text(w - 310, 12, "AIMWARE.net | " .. os.date("%X") .. " | " .. "FPS: " .. get_abs_fps() .. " | Ping: " .. ping);
+		draw.Text(w - 330, 12, "AIMWARE.net | " .. os.date("%X") .. " | " .. "FPS: ");
+		draw.Text(w - 117, 12, get_abs_fps());
+		draw.Text(w - 91, 12, " | Ping: " .. ping);
 	end
 end
 

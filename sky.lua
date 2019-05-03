@@ -51,7 +51,7 @@ function SkyBox()
 		elseif (skybox_new == 13 and gui.GetValue("msc_restrict") ~= 1) then
             client.SetConVar("sv_skyname" , "sky116")  
         
-		end
+	    end
 
 end
 

@@ -67,7 +67,7 @@ function EventLogger( Event, Entity )
         hitHealthRemaining = INT_HEALTH;
 		hitAttackerName = NAME_Attacker;
 		
-		hurt_time = globals.RealTime();
+	    hurt_time = globals.RealTime();
 		
 		if ( INDEX_ATTACKER == ME and INDEX_Victim ~= ME ) then           
 			eventMsg = string.format( "Hit %s in the %s for %s damage (%s health remaining) \n", hitPlayerName, HitGroup(hitSpot), hitDmg, hitHealthRemaining);
@@ -126,7 +126,7 @@ function EventLogger( Event, Entity )
 end
 
 function DrawLogs()
-	local font = draw.CreateFont("Consolas", 12, 765);
+	local font = draw.CreateFont("Consolas", 12, 1500);
 	
 	local screenCenterX, screenCenterY = draw.GetScreenSize();
     
